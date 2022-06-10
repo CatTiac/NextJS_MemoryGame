@@ -195,8 +195,8 @@ function MemoryGame({ options, setOptions, highscore, setHighscore }) {
           score = 0
         }
   
-        if (score > highScore) {
-          setHighScore(score)
+        if (score > highscore) {
+          setHighscore(score)
           const json = JSON.stringify(score)
           localStorage.setItem('memorygamehighscore', json)
         }
